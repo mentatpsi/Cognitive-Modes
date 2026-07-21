@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "cognitive-modes",
+  "description": "Sixteen type-keyed cognitive operating modes for Claude Code. Each plugin maps an MBTI type to behavioral heuristics derived from its Jungian function stack \u2014 the type is an index, the payload is a concrete operating protocol. Behavioral scaffolds for inducing distinct operating styles, not a claim that the types are validated cognitive science.",
+  "owner": {
+    "name": "Shay"
+  },
+  "plugins": [
+    {
+      "name": "entp-mode",
+      "source": "./plugins/entp-mode",
+      "description": "Divergent generation (Ne/Ti): idea generation, concept expansion, frame-breaking, and inversion. Two skills \u2014 ideation and inversion.",
+      "tags": [
+        "ideation",
+        "brainstorm",
+        "divergent",
+        "creativity",
+        "reframe"
+      ],
+      "version": "0.1.0",
+      "category": "cognitive-mode"
+    },
+    {
+      "name": "intp-mode",
+      "source": "./plugins/intp-mode",
+      "description": "System building (Ti/Ne): first-principles architecture, defining primitives and invariants, modeling a whole structure for internal coherence.",
+      "tags": [
+        "architecture",
+        "system-design",
+        "first-principles",
+        "modeling"
+      ],
+      "version": "0.1.0",
+      "category": "cognitive-mode"
+    },
+    {
+      "name": "intj-mode",
+      "source": "./plugins/intj-mode",
+      "description": "Theory testing (Ni/Te): forming hypotheses, deriving falsifiable predictions, designing the test most likely to break a claim.",
+      "tags": [
+        "hypothesis",
+        "falsification",
+        "testing",
+        "analysis"
+      ],
+      "version": "0.1.0",
+      "category": "cognitive-mode"
+    },
+    {
+      "name": "entj-mode",
+      "source": "./plugins/entj-mode",
+      "description": "Execution planning (Te/Ni): Turn a goal or vision into a structured, sequenced, metric-driven execution plan.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "planning",
+        "roadmap",
+        "execution",
+        "strategy",
+        "metrics"
+      ]
+    },
+    {
+      "name": "infj-mode",
+      "source": "./plugins/infj-mode",
+      "description": "Assessment (Ni/Fe): synthesizing scattered signals into a coherent read of a text, argument, system, or dynamic, then weighing human impact. Scoped to artifacts, not diagnosing people.",
+      "tags": [
+        "assessment",
+        "synthesis",
+        "critique",
+        "evaluation"
+      ],
+      "version": "0.1.0",
+      "category": "cognitive-mode"
+    },
+    {
+      "name": "infp-mode",
+      "source": "./plugins/infp-mode",
+      "description": "Values alignment (Fi/Ne): Check whether a piece of work, decision, or message aligns with core values, and find the authentic angle.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "values",
+        "authenticity",
+        "meaning",
+        "integrity",
+        "alignment"
+      ]
+    },
+    {
+      "name": "enfj-mode",
+      "source": "./plugins/enfj-mode",
+      "description": "Facilitation (Fe/Ni): Craft communication and process that brings people into alignment \u2014 messages, meeting designs, difficult conversations, stakeholder buy-in.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "communication",
+        "buy-in",
+        "facilitation",
+        "stakeholders",
+        "alignment"
+      ]
+    },
+    {
+      "name": "enfp-mode",
+      "source": "./plugins/enfp-mode",
+      "description": "Possibility & momentum (Ne/Fi): Generate possibilities that connect to what energizes and matters to someone \u2014 brainstorming with a motivational and personal thread, opening options when someone feels stuck or flat.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "brainstorm",
+        "motivation",
+        "exploration",
+        "possibility",
+        "momentum"
+      ]
+    },
+    {
+      "name": "istj-mode",
+      "source": "./plugins/istj-mode",
+      "description": "Procedure & compliance (Si/Te): Apply standards, precedent, and established procedure rigorously \u2014 verify work against a spec, build checklists, ensure compliance, catch deviations from what's proven.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "compliance",
+        "checklist",
+        "verification",
+        "standards",
+        "rigor"
+      ]
+    },
+    {
+      "name": "isfj-mode",
+      "source": "./plugins/isfj-mode",
+      "description": "Stewardship & documentation (Si/Fe): Preserve and document what works, and attend carefully to concrete needs \u2014 thorough documentation, onboarding material, capturing institutional knowledge, supporting people with practical detail.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "documentation",
+        "onboarding",
+        "knowledge-capture",
+        "support",
+        "continuity"
+      ]
+    },
+    {
+      "name": "estj-mode",
+      "source": "./plugins/estj-mode",
+      "description": "Operations & delivery (Te/Si): Organize execution and drive work to completion against a standard \u2014 logistics, process, coordinating moving parts, enforcing that things actually get done on time and to spec.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "operations",
+        "logistics",
+        "execution",
+        "process",
+        "delivery"
+      ]
+    },
+    {
+      "name": "esfj-mode",
+      "source": "./plugins/esfj-mode",
+      "description": "Coordination & consensus (Fe/Si): Coordinate people and logistics toward smooth delivery and consensus \u2014 organizing group efforts, aligning schedules and roles, keeping everyone informed and on board.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "coordination",
+        "consensus",
+        "organizing",
+        "communication",
+        "teamwork"
+      ]
+    },
+    {
+      "name": "istp-mode",
+      "source": "./plugins/istp-mode",
+      "description": "Troubleshooting & debugging (Ti/Se): Diagnose a malfunction at the mechanism level and find the pragmatic fix \u2014 debugging, root-causing a failure, figuring out why something concrete isn't working.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "debugging",
+        "root-cause",
+        "diagnosis",
+        "troubleshooting",
+        "fix"
+      ]
+    },
+    {
+      "name": "isfp-mode",
+      "source": "./plugins/isfp-mode",
+      "description": "Aesthetic & craft (Fi/Se): Make aesthetic and craft judgments grounded in concrete sensory detail and genuine personal taste \u2014 visual and tactile design feedback, refining the feel of a thing, choosing what looks and feels right.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "design",
+        "aesthetics",
+        "craft",
+        "taste",
+        "visual"
+      ]
+    },
+    {
+      "name": "estp-mode",
+      "source": "./plugins/estp-mode",
+      "description": "Rapid response (Se/Ti): Solve a problem in real time under pressure \u2014 fast tactical decisions, incident response, thinking on your feet when there's no time for a full plan.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "incident",
+        "triage",
+        "real-time",
+        "tactical",
+        "decisive"
+      ]
+    },
+    {
+      "name": "esfp-mode",
+      "source": "./plugins/esfp-mode",
+      "description": "Engagement & experience (Se/Fi): Design for present-moment experience and audience connection \u2014 making something engaging, lively, and emotionally resonant in the moment: presentations, events, demos, content that needs to land with real people.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "engagement",
+        "presentation",
+        "experience",
+        "audience",
+        "storytelling"
+      ]
+    }
+  ]
+}
