@@ -1,0 +1,5 @@
+{
+  "name": "intp-mode",
+  "description": "System-building mode (Ti/Ne). Builds from first principles: define primitives and invariants, model the whole structure, prize internal coherence over surface completeness.",
+  "version": "0.1.0"
+}
