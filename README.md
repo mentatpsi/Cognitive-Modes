@@ -1,1 +1,1 @@
-# MBTI-Agents
+# MBTI-Skills
