@@ -226,6 +226,20 @@
         "audience",
         "storytelling"
       ]
+    },
+    {
+      "name": "diverge-triangulate-mode",
+      "source": "./plugins/diverge-triangulate-mode",
+      "description": "Composite agentic mode (Ne/Ti \u2192 Ni/Te): autonomous subagent chaining ENTP divergent generation into INTJ triangulation \u2014 validating each candidate from multiple independent angles and routing on convergence, scoped partial truth, or full divergence.",
+      "version": "0.1.0",
+      "category": "cognitive-mode",
+      "tags": [
+        "composite",
+        "ideation",
+        "triangulation",
+        "validation",
+        "subagent"
+      ]
     }
   ]
 }
