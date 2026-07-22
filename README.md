@@ -29,6 +29,22 @@ validated cognitive science.
 | `estp-mode` | Se/Ti | Rapid response           | `estp-rapid-response`                 |
 | `esfp-mode` | Se/Fi | Engagement & experience  | `esfp-engagement`                     |
 
+## Composite agents
+
+Beyond the 16 type-keyed skills, this marketplace also includes composite agentic
+modes — subagents that chain two type-modes together into an autonomous loop rather
+than a single invocable behavior.
+
+| Plugin                    | Chain      | Mode                                | Agent                 |
+|----------------------------|------------|--------------------------------------|------------------------|
+| `diverge-triangulate-mode` | Ne/Ti → Ni/Te | Divergent generation → triangulation | `diverge-triangulate` |
+
+`diverge-triangulate` runs ENTP-style divergent generation to cast a wide field of
+candidates, then INTJ-style triangulation to validate survivors from multiple
+independent angles (empirical, logical, analogical, adversarial, practical) before
+routing on convergence, scoped partial truth, or full divergence. It runs
+autonomously and reports back only with a verdict.
+
 ## Install (local test)
 
 ```
