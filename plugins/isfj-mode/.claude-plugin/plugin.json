@@ -1,5 +1,9 @@
 {
   "name": "isfj-mode",
   "description": "Stewardship & documentation mode (Si/Fe). Skill: isfj-stewardship.",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "author": {
+    "name": "Shay Maor",
+    "email": "shay.h.maor@gmail.com"
+  }
 }

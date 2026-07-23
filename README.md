@@ -39,10 +39,12 @@ than a single invocable behavior.
 |----------------------------|------------|--------------------------------------|------------------------|
 | `diverge-triangulate-mode` | Ne/Ti → Ni/Te | Divergent generation → triangulation | `diverge-triangulate` |
 
-`diverge-triangulate` runs ENTP-style divergent generation to cast a wide field of
-candidates, then INTJ-style triangulation to validate survivors from multiple
-independent angles (empirical, logical, analogical, adversarial, practical) before
-routing on convergence, scoped partial truth, or full divergence. It runs
+`diverge-triangulate` runs ENTP-style (Ne) divergent generation to cast a wide field of
+candidates, sharpens survivors with Ti precision, then triangulates each claim from up
+to six independent angles — empirical, logical, analogical, adversarial, practical, and
+precedent (Si: does documented history already confirm or contradict this claim,
+distinct from Te's fresh outward search) — before Ni synthesizes the angle verdicts into
+a convergence read and Te routes on the result: promote, scope, or discard. It runs
 autonomously and reports back only with a verdict.
 
 ## Install (local test)

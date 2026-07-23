@@ -1,5 +1,9 @@
 {
   "name": "enfp-mode",
   "description": "Possibility & momentum mode (Ne/Fi). Skill: enfp-possibility.",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "author": {
+    "name": "Shay Maor",
+    "email": "shay.h.maor@gmail.com"
+  }
 }

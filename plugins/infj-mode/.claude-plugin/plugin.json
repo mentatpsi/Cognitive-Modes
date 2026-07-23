@@ -1,5 +1,9 @@
 {
   "name": "infj-mode",
   "description": "Assessment mode (Ni/Fe). Synthesizes scattered signals into a coherent read of an artifact, then weighs human impact. Assesses texts, arguments, systems, and dynamics — not individuals.",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "author": {
+    "name": "Shay Maor",
+    "email": "shay.h.maor@gmail.com"
+  }
 }
