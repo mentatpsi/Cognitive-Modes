@@ -230,7 +230,7 @@
     {
       "name": "diverge-triangulate-mode",
       "source": "./plugins/diverge-triangulate-mode",
-      "description": "Composite agentic mode (Ne/Ti \u2192 Te+Si/Ni/Te): autonomous subagent chaining ENTP divergent generation into INTJ triangulation \u2014 validating each candidate from up to six independent angles, including precedent (Si) alongside fresh empirical search (Te), then synthesizing (Ni) and routing (Te) on convergence, scoped partial truth, or full divergence.",
+      "description": "Composite agentic mode (ENTP Ne/Ti \u2192 INTJ Ni/Ti \u2192 Te+Si \u2192 Te): a 7-phase autonomous subagent that diverges (Ne), thins (Ti), synthesizes a unifying pattern if one exists (Ni), sharpens claims (Ti), triangulates from up to six independent angles including precedent (Si, borrowed from ISTJ) alongside fresh empirical search (Te), then reads convergence and routes (Te) \u2014 promoting, scoping, or discarding each candidate.",
       "version": "0.1.0",
       "category": "cognitive-mode",
       "tags": [
