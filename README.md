@@ -37,15 +37,23 @@ than a single invocable behavior.
 
 | Plugin                    | Chain      | Mode                                | Agent                 |
 |----------------------------|------------|--------------------------------------|------------------------|
-| `diverge-triangulate-mode` | Ne/Ti → Ni/Te | Divergent generation → triangulation | `diverge-triangulate` |
+| `diverge-triangulate-mode` | Ne/Ti → Ni → Ti → Te+Si → Te | Diverge → synthesize → sharpen → triangulate → route | `diverge-triangulate` |
 
-`diverge-triangulate` runs ENTP-style (Ne) divergent generation to cast a wide field of
-candidates, sharpens survivors with Ti precision, then triangulates each claim from up
-to six independent angles — empirical, logical, analogical, adversarial, practical, and
-precedent (Si: does documented history already confirm or contradict this claim,
-distinct from Te's fresh outward search) — before Ni synthesizes the angle verdicts into
-a convergence read and Te routes on the result: promote, scope, or discard. It runs
-autonomously and reports back only with a verdict.
+`diverge-triangulate` is organized by function, not by type — the ENTP/INTJ/ISTJ labels
+are an index for readers who think in MBTI terms, not the structure itself. It runs a
+7-phase loop: **Ne** diverges a wide field of candidates; **Ti** thins it down to
+internally coherent survivors, without yet checking anything external; **Ni** looks for a
+single unifying pattern across the survivors (perceived, not certified — a synthesis is
+just another candidate, put through the same scrutiny as the rest); **Ti** sharpens each
+surviving claim into something falsifiable; **Te** (plus **Si** for one angle)
+triangulates each claim from up to six independent angles — empirical, logical,
+analogical, adversarial, practical, and precedent (Si: does documented history already
+confirm or contradict this, distinct from Te's fresh outward search, and skipped when no
+real track record exists); **Te** reads the convergence verdict and routes — promote,
+scope, or discard. Si is deliberately scoped to one angle rather than a whole phase: it's
+ENTP's inferior function, its structural blind spot, which is exactly why triangulation
+needs a third position to cover it. The agent runs autonomously and reports back only
+with a verdict.
 
 ## Install (local test)
 

@@ -1,6 +1,6 @@
 {
   "name": "diverge-triangulate-mode",
-  "description": "Composite agentic mode: an autonomous subagent that runs ENTP divergent generation into INTJ triangulation — validating each candidate from multiple independent angles and routing on convergence, scoped partial truth, or full divergence.",
+  "description": "Composite agentic mode: an autonomous subagent chaining ENTP divergent generation, an INTJ synthesis-and-sharpen pass, and Te+Si triangulation (Si borrowed from ISTJ for the Precedent angle) — validating each candidate from multiple independent angles and routing on convergence, scoped partial truth, or full divergence.",
   "version": "0.1.0",
   "author": {
     "name": "Shay Maor",
