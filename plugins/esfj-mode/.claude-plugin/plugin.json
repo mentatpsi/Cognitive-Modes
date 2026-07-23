@@ -1,5 +1,9 @@
 {
   "name": "esfj-mode",
   "description": "Coordination & consensus mode (Fe/Si). Skill: esfj-coordination.",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "author": {
+    "name": "Shay Maor",
+    "email": "shay.h.maor@gmail.com"
+  }
 }

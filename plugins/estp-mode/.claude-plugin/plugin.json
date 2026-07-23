@@ -1,5 +1,9 @@
 {
   "name": "estp-mode",
   "description": "Rapid response mode (Se/Ti). Skill: estp-rapid-response.",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "author": {
+    "name": "Shay Maor",
+    "email": "shay.h.maor@gmail.com"
+  }
 }
