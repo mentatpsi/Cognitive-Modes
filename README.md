@@ -55,6 +55,24 @@ ENTP's inferior function, its structural blind spot, which is exactly why triang
 needs a third position to cover it. The agent runs autonomously and reports back only
 with a verdict.
 
+### Benchmarks
+
+`diverge-triangulate` was benchmarked on security code review: 75 runs over 6 targets, compared head-to-head with the same prompts run without it. Due to data sensitivity and existing bugs discovered. Basic Data Sanitization was done to avoid identification.
+
+- **Token cost:** about 50% fewer input tokens and 36–42% lower cost with caching priced in, for the same prompt on the same targets. The saving comes from the agent's narrow `tools:` allowlist, which drops about 20k tokens of session overhead from every API call, not from the triangulation method. With tools matched, the method saved nothing.
+- **False positives:** fewer in 3 of 5 head-to-heads. The effect is clearest when Triangulate is stacked on an expert prompt: false positives fell from 0.57 to 0.38 per run, and unverifiable claims fell by half.
+- **Hard-bug recall:** no improvement.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="benchmarks/images/token-setup-dark.png">
+  <img src="benchmarks/images/token-setup-light.png" width="100%" alt="Turn-1 context: general-purpose agent 28.2k tokens, Triangulate agent 8.0k, plain agent with the same tools 5.1k. The difference is extra tool definitions and skill lists.">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="benchmarks/images/false-positives-dark.png">
+  <img src="benchmarks/images/false-positives-light.png" width="100%" alt="False positives per run with and without Triangulate across five head-to-head comparisons: fewer in three, tied in one, more in one.">
+</picture>
+
 ## Install (local test)
 
 ```
