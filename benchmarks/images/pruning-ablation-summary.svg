@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title>Does Triangulate prune its search? Matched-tool ablation results</title>
+  <style>
+    .bg { fill: #fcfcfb; }
+    .ink { fill: #0b0b0b; }
+    .ink2 { fill: #52514e; }
+    .muted { fill: #898781; }
+    .s1 { fill: #2a78d6; }
+    .s2 { fill: #eb6834; }
+    .axis { stroke: #c3c2b7; stroke-width: 1; }
+    .rule { stroke: #e1e0d9; stroke-width: 1; }
+    .good { fill: #0ca30c; }
+    .refuted { fill: #e1e0d9; }
+  </style>
+
+  <rect class="bg" width="1200" height="1200"/>
+
+  <!-- Header -->
+  <text x="40" y="60" font-size="28" font-weight="700" class="ink">Does Triangulate prune its search? Not on this target.</text>
+  <text x="40" y="90" font-size="14" class="ink2">Plain expert prompt vs. Triangulate · same model, same tools (Read / Grep / Glob only) · 3 runs each · target: a large open-source TypeScript dev server</text>
+
+  <!-- Legend -->
+  <rect x="40" y="112" width="14" height="14" rx="3" class="s1"/>
+  <text x="62" y="124" font-size="14" class="ink">Plain (control)</text>
+  <rect x="190" y="112" width="14" height="14" rx="3" class="s2"/>
+  <text x="212" y="124" font-size="14" class="ink">Triangulate</text>
+
+  <line x1="40" y1="146" x2="1160" y2="146" class="rule"/>
+
+  <!-- Panel 1: exploration cost -->
+  <text x="40" y="180" font-size="18" font-weight="700" class="ink">Exploration cost: the same in both arms</text>
+  <text x="40" y="201" font-size="13.5" class="ink2">Mean of 3 runs. The hypothesis predicted Triangulate lower on every row.</text>
+  <line x1="40" y1="216" x2="40" y2="534" class="axis"/>
+
+  <text x="48" y="230" font-size="13.5" class="ink2">Unique files read</text>
+  <path class="s1" d="M40 238 h876 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-876 z"><title>Plain: 33.0 unique files</title></path>
+  <path class="s2" d="M40 260 h849.3 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-849.3 z"><title>Triangulate: 32.0 unique files</title></path>
+  <text x="928" y="251.5" font-size="13.5" class="ink">33.0 <tspan class="muted">· Plain</tspan></text>
+  <text x="901.3" y="273.5" font-size="13.5" class="ink">32.0 <tspan class="muted">· Triangulate</tspan></text>
+
+  <text x="48" y="308" font-size="13.5" class="ink2">Context growth after turn 1 (tokens)</text>
+  <path class="s1" d="M40 316 h860.2 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-860.2 z"><title>Plain: 126.6k tokens</title></path>
+  <path class="s2" d="M40 338 h876 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-876 z"><title>Triangulate: 128.9k tokens</title></path>
+  <text x="912.2" y="329.5" font-size="13.5" class="ink">126.6k</text>
+  <text x="928" y="351.5" font-size="13.5" class="ink">128.9k</text>
+
+  <text x="48" y="386" font-size="13.5" class="ink2">Total input tokens, all turns</text>
+  <path class="s1" d="M40 394 h856.6 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-856.6 z"><title>Plain: 4.00M tokens</title></path>
+  <path class="s2" d="M40 416 h876 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-876 z"><title>Triangulate: 4.09M tokens</title></path>
+  <text x="908.6" y="407.5" font-size="13.5" class="ink">4.00M</text>
+  <text x="928" y="429.5" font-size="13.5" class="ink">4.09M</text>
+
+  <text x="48" y="464" font-size="13.5" class="ink2">Characters read from tool results</text>
+  <path class="s1" d="M40 472 h862.3 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-862.3 z"><title>Plain: 252k characters</title></path>
+  <path class="s2" d="M40 494 h876 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-876 z"><title>Triangulate: 256k characters</title></path>
+  <text x="914.3" y="485.5" font-size="13.5" class="ink">252k</text>
+  <text x="928" y="507.5" font-size="13.5" class="ink">256k</text>
+
+  <text x="40" y="564" font-size="13" class="muted">Triangulate's first turn is larger (8.7k vs 5.1k tokens) because of its method text.</text>
+
+  <line x1="40" y1="600" x2="1160" y2="600" class="rule"/>
+
+  <!-- Panel 2: recall -->
+  <text x="40" y="650" font-size="18" font-weight="700" class="ink">Recall: 3 published advisories</text>
+  <text x="40" y="740" font-size="52" font-weight="700" class="ink">0 / 3</text>
+  <rect x="40" y="758" width="12" height="12" rx="3" class="s1"/>
+  <text x="58" y="769" font-size="14" class="ink2">Plain</text>
+  <text x="280" y="740" font-size="52" font-weight="700" class="ink">0 / 3</text>
+  <rect x="280" y="758" width="12" height="12" rx="3" class="s2"/>
+  <text x="298" y="769" font-size="14" class="ink2">Triangulate</text>
+  <text x="40" y="816" font-size="13.5" class="ink2">All 6 runs opened all 3 vulnerable files.</text>
+  <text x="40" y="836" font-size="13.5" class="ink2">The bugs were read and missed, not pruned away.</text>
+
+  <!-- Panel 3: precision -->
+  <text x="620" y="650" font-size="18" font-weight="700" class="ink">Precision: findings tested on a live server</text>
+  <text x="620" y="672" font-size="13.5" class="ink2">Verified by an agent that did not know which arm reported what.</text>
+
+  <rect x="620" y="712" width="12" height="12" rx="3" class="s1"/>
+  <text x="638" y="723" font-size="14" class="ink">Plain</text>
+  <g font-size="20" text-anchor="middle">
+    <rect x="740" y="700" width="36" height="36" rx="4" class="refuted"><title>Refuted</title></rect><text x="758" y="725" class="ink2">✕</text>
+    <rect x="784" y="700" width="36" height="36" rx="4" class="refuted"><title>Refuted</title></rect><text x="802" y="725" class="ink2">✕</text>
+    <rect x="828" y="700" width="36" height="36" rx="4" class="refuted"><title>Refuted</title></rect><text x="846" y="725" class="ink2">✕</text>
+  </g>
+  <text x="935" y="724" font-size="15" font-weight="700" class="ink">0 of 3 real</text>
+
+  <rect x="620" y="782" width="12" height="12" rx="3" class="s2"/>
+  <text x="638" y="793" font-size="14" class="ink">Triangulate</text>
+  <g font-size="20" text-anchor="middle">
+    <rect x="740" y="770" width="36" height="36" rx="4" class="good"><title>Confirmed: cross-site request opens the editor</title></rect><text x="758" y="795" fill="#ffffff">✓</text>
+    <rect x="785" y="771" width="34" height="34" rx="4" fill="#fcfcfb" stroke="#0ca30c" stroke-width="2"><title>Confirmed: shell injection via the --open option</title></rect><text x="802" y="795" fill="#006300">✓</text>
+    <rect x="828" y="770" width="36" height="36" rx="4" class="refuted"><title>Refuted</title></rect><text x="846" y="795" class="ink2">✕</text>
+    <rect x="872" y="770" width="36" height="36" rx="4" class="refuted"><title>Refuted</title></rect><text x="890" y="795" class="ink2">✕</text>
+  </g>
+  <text x="935" y="794" font-size="15" font-weight="700" class="ink">2 of 4 real</text>
+
+  <g font-size="13">
+    <rect x="620" y="838" width="14" height="14" rx="3" class="good"/>
+    <text x="642" y="849" class="ink2">Confirmed: a cross-site page can open any file in the developer's editor</text>
+    <rect x="621" y="863" width="12" height="12" rx="3" fill="#fcfcfb" stroke="#0ca30c" stroke-width="2"/>
+    <text x="642" y="873" class="ink2">Confirmed: shell injection, needs control of the --open option</text>
+    <rect x="620" y="886" width="14" height="14" rx="3" class="refuted"/>
+    <text x="642" y="897" class="ink2">Refuted when tested</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="40" y1="1000" x2="1160" y2="1000" class="rule"/>
+  <text x="40" y="1036" font-size="13.5" class="ink2">Method: identical security-review prompt for both arms; no shell or web access; a fresh context for every run; no run could reach the answer key.</text>
+  <text x="40" y="1060" font-size="13.5" class="ink2">Caveats: n = 3 per arm, so the cost differences are within run-to-run noise, and the precision gap rests on 7 findings in total.</text>
+  <text x="40" y="1084" font-size="13.5" class="ink2">The full-toolset arm, which measures the tool-setup effect, has not been run yet.</text>
+</svg>
