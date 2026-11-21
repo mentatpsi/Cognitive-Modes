@@ -61,7 +61,7 @@ with a verdict.
 
 - **Token cost:** about 50% fewer input tokens and 36–42% lower cost with caching priced in, for the same prompt on the same targets. The saving comes from the agent's narrow `tools:` allowlist, which drops about 20k tokens of session overhead from every API call, not from the triangulation method. With tools matched, the method saved nothing.
 - **False positives:** fewer in 3 of 5 head-to-heads. The effect is clearest when Triangulate is stacked on an expert prompt: false positives fell from 0.57 to 0.38 per run, and unverifiable claims fell by half.
-- **Hard-bug recall:** no improvement.
+- **Recall:** no measurable gain on the named advisory bugs (37% against 31% main-bug hits). On other real bugs, Triangulate found more in 3 of 5 comparisons, including 2 live-confirmed bugs against 0 when the tools were matched.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="benchmarks/images/token-setup-dark.png">
