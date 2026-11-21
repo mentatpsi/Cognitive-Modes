@@ -87,8 +87,8 @@
   <rect x="620" y="782" width="12" height="12" rx="3" class="s2"/>
   <text x="638" y="793" font-size="14" class="ink">Triangulate</text>
   <g font-size="20" text-anchor="middle">
-    <rect x="740" y="770" width="36" height="36" rx="4" class="good"><title>Confirmed: cross-site request opens the editor</title></rect><text x="758" y="795" fill="#ffffff">✓</text>
-    <rect x="785" y="771" width="34" height="34" rx="4" fill="#fcfcfb" stroke="#0ca30c" stroke-width="2"><title>Confirmed: shell injection via the --open option</title></rect><text x="802" y="795" fill="#006300">✓</text>
+    <rect x="740" y="770" width="36" height="36" rx="4" class="good"><title>Confirmed: cross-site request forgery on a developer-tooling endpoint</title></rect><text x="758" y="795" fill="#ffffff">✓</text>
+    <rect x="785" y="771" width="34" height="34" rx="4" fill="#fcfcfb" stroke="#0ca30c" stroke-width="2"><title>Confirmed: shell injection through a command-line option</title></rect><text x="802" y="795" fill="#006300">✓</text>
     <rect x="828" y="770" width="36" height="36" rx="4" class="refuted"><title>Refuted</title></rect><text x="846" y="795" class="ink2">✕</text>
     <rect x="872" y="770" width="36" height="36" rx="4" class="refuted"><title>Refuted</title></rect><text x="890" y="795" class="ink2">✕</text>
   </g>
@@ -96,9 +96,9 @@
 
   <g font-size="13">
     <rect x="620" y="838" width="14" height="14" rx="3" class="good"/>
-    <text x="642" y="849" class="ink2">Confirmed: a cross-site page can open any file in the developer's editor</text>
+    <text x="642" y="849" class="ink2">Confirmed: cross-site request forgery on a developer-tooling endpoint</text>
     <rect x="621" y="863" width="12" height="12" rx="3" fill="#fcfcfb" stroke="#0ca30c" stroke-width="2"/>
-    <text x="642" y="873" class="ink2">Confirmed: shell injection, needs control of the --open option</text>
+    <text x="642" y="873" class="ink2">Confirmed: shell injection, needs control of a command-line option</text>
     <rect x="620" y="886" width="14" height="14" rx="3" class="refuted"/>
     <text x="642" y="897" class="ink2">Refuted when tested</text>
   </g>
